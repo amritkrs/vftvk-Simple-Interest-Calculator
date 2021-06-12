@@ -15,11 +15,13 @@ function compute()
 
     if (principal == null || principal == "")  {
         alert("Please Enter the amount field");
+        document.getElementById("principal").focus();
         return;
     }
 
     if (principal <= 0) {
         alert("Principal has to be greater than zero");
+        document.getElementById("principal").focus();
         return;
     }
     document.getElementById("maindiv").style.height = "330px";
